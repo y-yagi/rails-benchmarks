@@ -1,9 +1,5 @@
 loop_count: 2000
 prelude: |
-  if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('2.4.0')
-    require File.join(File.expand_path(__dir__), 'files', 'nokogiri_patch')
-  end
-
   require 'action_view'
   require 'action_dispatch/http/mime_type'
   require 'rails'
